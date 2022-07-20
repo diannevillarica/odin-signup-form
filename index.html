@@ -5,15 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Signup Form</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
+    <aside class="left-side">
       <div class="container">
-        <div class="content">
+        <div class="logo">
+          <img src="./icons8-amazon-alexa-logo.svg" alt="logo" />
+          <h1>Company</h1>
+        </div>
+        <div class="credits">
+          <p>
+            Photo by <a href="https://unsplash.com/@visaxslr">Visax</a> on
+            <a href="https://unsplash.com/">Unsplash</a>
+            <br />
+            <a
+              target="_blank"
+              href="https://icons8.com/icon/QPb5A8P4cNqu/amazon-alexa-logo"
+              >Amazon Alexa Logo</a
+            >
+            icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+          </p>
+        </div>
+      </div>
+    </aside>
+    <main class="right-side">
+      <div class="container">
+        <div class="text-container">
           <p>
             This is not a real online service! You know you need something like
-            this in your life to help you realize
+            this in your life to help you realize your deepest dreams. <br />
+            Sign up <em>now</em> to get started.
           </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-container">
+          <form class="form" action="#" method="post">
+            <h4 class="form-heading">Let's do this!</h4>
+            <div class="form-row">
+              <div class="form-control">
+                <label for="">First name</label><input type="text" />
+              </div>
+              <div class="form-control">
+                <label for="">Last name</label><input type="text" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-control">
+                <label for="">Email</label><input type="text" />
+              </div>
+              <div class="form-control">
+                <label for="">Phone number</label><input type="text" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-control">
+                <label for="">Password</label><input type="text" />
+              </div>
+              <div class="form-control">
+                <label for="">Confirm password</label><input type="text" />
+              </div>
+            </div>
+            <button class="form-btn" type="submit">Create Account</button>
+            <p class="login-message">
+              Already have an account? <a href="http://">Log in</a>
+            </p>
+          </form>
         </div>
       </div>
     </main>
