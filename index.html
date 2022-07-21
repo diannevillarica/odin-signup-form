@@ -12,11 +12,11 @@
       <div class="container">
         <div class="logo">
           <img src="./icons8-amazon-alexa-logo.svg" alt="logo" />
-          <h1>Company</h1>
+          <h1>ForScience</h1>
         </div>
         <div class="credits">
           <p>
-            Photo by <a href="https://unsplash.com/@visaxslr">Visax</a> on
+            Photo by <a href="https://unsplash.com/@nasa">NASA</a> on
             <a href="https://unsplash.com/">Unsplash</a>
             <br />
             <a
@@ -32,38 +32,91 @@
     <main class="right-side">
       <div class="container">
         <div class="text-container">
-          <p>
+          <h6>
             This is not a real online service! You know you need something like
             this in your life to help you realize your deepest dreams. <br />
             Sign up <em>now</em> to get started.
-          </p>
-          <p>You <em>know</em> you want to.</p>
+          </h6>
+          <h6>You <em>know</em> you want to.</h6>
         </div>
         <div class="form-container">
           <form class="form" action="#" method="post">
             <h4 class="form-heading">Let's do this!</h4>
             <div class="form-row">
               <div class="form-control">
-                <label for="">First name</label><input type="text" />
+                <label for="first_name">First name</label
+                ><input
+                  placeholder=" "
+                  id="first_name"
+                  type="text"
+                  name="first_name"
+                  maxlength="25"
+                  required
+                />
+                <div class="requirements">*This field is required</div>
               </div>
               <div class="form-control">
-                <label for="">Last name</label><input type="text" />
+                <label for="last_name">Last name</label
+                ><input
+                  placeholder=" "
+                  id="last_name"
+                  type="text"
+                  name="last_name"
+                  maxlength="25"
+                  required
+                />
+                <div class="requirements">*This field is required</div>
               </div>
             </div>
             <div class="form-row">
               <div class="form-control">
-                <label for="">Email</label><input type="text" />
+                <label for="email">Email</label
+                ><input
+                  placeholder=" "
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                />
+                <div class="requirements">*Must be a valid email</div>
               </div>
               <div class="form-control">
-                <label for="">Phone number</label><input type="text" />
+                <label for="phone_number">Phone number</label
+                ><input
+                  placeholder="000-000-0000"
+                  id="phone_number"
+                  type="tel"
+                  name="phone_number"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                />
+                <div class="requirements">
+                  *Must be numbers with dashes. 000-000-0000
+                </div>
               </div>
             </div>
             <div class="form-row">
               <div class="form-control">
-                <label for="">Password</label><input type="text" />
+                <label for="password">Password</label
+                ><input
+                  placeholder=" "
+                  id="password"
+                  type="password"
+                  name="password"
+                  required
+                />
+                <div class="requirements">*Passwords do not match</div>
               </div>
               <div class="form-control">
-                <label for="">Confirm password</label><input type="text" />
+                <label for="password">Confirm password</label
+                ><input
+                  placeholder=" "
+                  id="password"
+                  type="password"
+                  name="password"
+                  required
+                />
+                <div class="requirements">*Passwords do not match</div>
               </div>
             </div>
             <button class="form-btn" type="submit">Create Account</button>

@@ -76,12 +76,13 @@ select {
 
 /* END CSS RESET */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1658251216561-077bf584633a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80);
+  background: url(https://images.unsplash.com/photo-1454789548928-9efd52dc4031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80)
+    no-repeat;
+  background-size: contain;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
   display: flex;
@@ -100,20 +101,28 @@ main.right-side {
 }
 
 h1 {
-  font-size: 97px;
-  line-height: 145.5px;
-  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  line-height: 93px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  text-align: center;
 }
 
 h3 {
   font-size: 48px;
   line-height: 72px;
-  font-family: "Pacifico", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 h4 {
   font-size: 34px;
   line-height: 51px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h5 {
+  font-size: 28px;
+  line-height: 42px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -141,6 +150,50 @@ a:visited {
   color: currentColor;
 }
 
+.credits {
+  text-align: center;
+  color: darkslategray;
+}
+
+.form-control label {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+input {
+  width: 300px;
+  border: 1px solid lightgray;
+  border-radius: 0.3rem;
+}
+
+input:valid {
+  border-color: green;
+}
+
+.requirements {
+  display: none;
+  font-size: 12px;
+  color: red;
+}
+
+input:valid ~ .requirements {
+  display: none;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+  display: block;
+  border-color: red;
+}
+
+input:invalid:not(:placeholder-shown) ~ .requirements {
+  display: block;
+}
+
+input:focus {
+  box-shadow: 2px 2px 10px darkgray;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -163,7 +216,7 @@ a:visited {
 }
 
 .logo {
-  margin-top: 5rem;
+  margin-top: 10rem;
   background-color: rgb(0, 0, 0, 0.5);
   width: 100%;
   padding: 1rem;
@@ -171,7 +224,7 @@ a:visited {
 
 .logo img {
   margin: 0 auto;
-  width: 10rem;
+  width: 8em;
 }
 
 .text-container p:last-child {
@@ -183,7 +236,7 @@ form.form {
   flex-direction: column;
   justify-content: space-around;
   align-items: baseline;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .form-heading {
   margin-bottom: 1rem;
@@ -192,7 +245,8 @@ form.form {
 .form-row {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  gap: 2rem;
 }
 
 .form-control {
@@ -200,14 +254,20 @@ form.form {
   flex-direction: column;
 }
 
-.form-control:first-child {
-  padding-right: 2rem;
-}
-
 .form-btn {
   margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: darkslategray;
+  color: white;
 }
 
 p.login-message {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+p.login-message a {
+  color: darkslategray;
+  font-weight: 700;
 }
